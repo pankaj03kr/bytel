@@ -6,7 +6,7 @@ function Sample() {
       <header id="nav" className="px-md-5 shadow-sm p-3">
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="#"style={{fontFamily:"Quicksand, sans-serif"}}>
               BY<span style={{ color: "red" }}>tel</span>
             </a>
             <button
@@ -41,8 +41,15 @@ function Sample() {
                   <a href="#" className="nav-link my-navlink">My Account</a>
                 </li>
               </ul>
+              <div className="d-flex gap-2 justify-content-center">
+            <a className="btn nav-btn-up" href="#">New Connections</a>
+            <a className="btn nav-btn-down" href="#">Call Us</a>
+
+
+          </div>
             </div>
           </div>
+         
         </nav>
       </header>
     </>

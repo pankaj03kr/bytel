@@ -2,24 +2,483 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
+
+:root {
+  --primary-color: #f52323;
+  --secondary-color: #183954;
+  --light-red: #ff5968;
+  --dark-red: #aa0000;
+}
 body {
   background-color: #fdfdfd;
   font-size: 16px;
   font-family: 'Quicksand', sans-serif;
-  color: var(dark-black-color);
-  
+  color: var(--dark-black-color);
 }
+#nav,.shadow-sm{
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)! important;
+  
+ 
+}  
+
+
 #navbarNav{
   position: "relative";
   margin-left: 260px;
   font-size: 20px;
+  font-weight: 500;
 
 }
 .my-navlink{
 
 padding:20px;
 }
+.my-navlink {
+  color: var(--dark-black-color)!important; 
+   transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  font-family: 'Quicksand', "sans-serif";
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 1rem;
+}
 
-.my-navlink:hover{
+#nav a .my-navlink:hover{
+color: #aa0000;
+}
+#header{
+  background-color: white;
+  height: 80px;
+}
+
+
+.nav-btn-up,.nav-btn-down{
+  position: relative;
+  font-size: 1rem;
+  padding: 0.4rem 1.8rem;
+  left:360px;
+  
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 0;
+
+}
+a.nav-btn-up {
+  /* color: var(--primary-color); */
+  color:red;
+  border: 1px solid;
+}
+
+a.nav-btn-down {
+  /* color: var(--secondary-color); */
+  border: 1px solid;
+  color: #183954;
+}
+a.nav-btn-up:hover{
+background-color: red;
+color: white;
+
+  
+}
+a.nav-btn-down:hover {
+  color: white;
+  background-color:#183954;
+}
+#hero{
+  padding: 2rem,1rem;
+  
+}
+#hero h1{
+  font-family: "Montserrat" ,"sans-serif";
+  font-size:56px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+#hero p {
+  margin-block: 0.5rem 2rem;
+}
+a.btn-hero,.btn-hero-up,.btn-hero-down{
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem 1.8rem;
+ 
+}
+a.btn-hero{
+  color:white;
+  background-color: rgb(216, 11, 11);
+ border: 1px solid;
+}
+a.btn-hero-up{
+  
+  color: #183954;
+  border: 1px solid;
+}
+a.btn-hero-up:hover{
+background-color: #183954;
+color: white;
+}
+a.btn-hero-down{
+ 
+  border: 1px solid;
+  color:red;
+}
+a.btn-hero-down:hover{
+  background-color: red;
+  color:white
+}
+#solutions{
+  padding: 3rem;
+  background-color: white;
+}
+.solution-title{
   color: red;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: "Montserrat","sans-serif";
+  margin-bottom: 0;
+  text-align: center;
+}
+.solution-subtitle{
+  text-align: center;
+  font-size: 700;
+  margin-bottom: 2.5rem;
+}
+#network-card{
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  height: 100%;
+  box-shadow: 0 2px 0 var(--primary-color), 0 -1px 1px 1px #f7f7f7;;
+} 
+.network-card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.network-card__text,.network-logo{
+  color: red;
+  font-size: 3rem;
+}
+.read-more-btn{
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+  display: block;
+}
+.limit-lines{
+  --max-lines:3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
+}
+.network-card__text p{
+  margin: 0;
+  color:#666 ;
+  text-align: justify;
+}
+#plans {
+  padding: 3rem;
+}
+.plan-card {
+  border-radius: 10px;
+  border: none;
+}
+.plan-card_title {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.plan-card img.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+.plan-card_flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 0.8rem;
+  position: relative;
+  bottom: 10px;
+}
+.plan-card_flex img {
+  height: 50px;
+  width: 50px;
+}
+.plan-card_flex p {
+  margin: 0;
+  line-height: 1.1rem;
+}
+.plan-card_price {
+  display: block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: relative;
+ 
+  
+}
+
+
+
+.swiper{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+
+}
+.swiper-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+a.btn-default{
+  color: white;
+  background-color: red;
+}
+
+.cardSwiper .swiper-slider{
+  height: 70px !important;
+  width: 50px !important ;
+  margin: 2.5px;
+  
+}
+
+/* .swiper-icon_flex{
+  display: flex;
+  flex-direction: coloumn;
+  align-items: center;
+} */
+.swiper-icon_flex p {
+  margin: 1px;
+  font-size: 10px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 55px;
+}
+.swiper-icon_flex .swiper-img-icon {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+.swiper-slider p{
+  position: relative;
+  right: 3px;
+}
+
+.focused-dec{
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+
+}
+.focused-title{
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+#book-ott table td,
+#book-ott table th {
+  padding: 1rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#book-ott table thead tr {
+ /* background-color: #aa0000; */
+  color: white;
+}
+#book-ott table {
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+}
+#book-ott table .ott-table-icon {
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+}
+
+/* discover */
+
+#discover{
+  background-color: white;
+  padding: 3rem;
+}
+#discover h1 {
+  font-weight: 700;
+}
+
+#discover h5 {
+  font-weight: 600;
+  margin-block: 1.5rem;
+}
+
+#discover p {
+  margin-bottom: 1.5rem;
+}
+#discover img {
+  border-radius: 10px;
+}
+#discover a.nav-btn-down{
+  position: relative;
+left:0px;
+ 
+}
+
+#book-connection {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.book-connection-wrapper {
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 -5px 0px 0 var(--primary-color), 0 5px 5px 0 #0000001a;
+}
+.book-connection-heading {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.book-connection-input {
+  border: none;
+  box-shadow: 0 2px 5px 0 hwb(0 0% 100% / 0.1), 0 -1px 1px 0 hwb(0 0% 100% / 0.04);
+  margin-bottom: 1.15rem;
+  border-radius: 50px;
+}
+
+.book-connection-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 20px;
+  transition: all 0.1s;
+  padding: 10px 50px;
+  border: 1px solid var(--secondary-color);
+}
+
+.book-connection-btn:hover {
+  transform: scale(1.03);
+  color: white;
+}
+
+/* CONTACT US */
+#contact {
+  padding: 3rem;
+  background-color: white;
+}
+.contact-colMargin {
+  margin-bottom: 1.2rem;
+}
+#contact input,
+#contact textarea {
+  background-color: #eee;
+  border: 1px solid #eee;
+  color: var(--secondary-color);
+  padding: 1rem 2.2rem;
+  border-radius: 5px;
+}
+
+.button .btn-contact {
+  background-color: #183954;
+  padding: 0.8rem 2rem;
+  color: white;
+  margin-top: 25px;
+}
+
+.button .btn-contact:hover {
+ background-color: #183954;
+  opacity: 0.8;
+  color: white;
+
+}
+/* FOOTER */
+#footer {
+  padding-block: 3rem 2rem;
+  background-color: #2e2929;
+  color: white;
+}
+.footer-title {
+  margin-top: 2rem;
+  position: relative;
+  top: -10px;
+
+}
+a.footer-links,
+  p.footer-links {
+    font-size: 0.9rem;
+  }
+
+    /* partner, leased-line, fiber-info */
+
+    #partner,
+    #leased-line,
+    #fiber-info {
+      padding: 2rem 1rem;
+    }
+
+    a.footer-links,p.footer-links{
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      color: white;
+      font-size: 1rem;
+    }
+    .text-justify{
+      text-align: justify;
+    }
+
+    #footer {
+      padding-block: 3rem 2rem;
+    }
+    
+.align-items-center{
+   
+      display: flex;
+
+
+    }
+    .footer-icon{
+      margin-top: 1rem;
+      margin-right: 0.8rem;
+      padding: 0.7rem 1rem;
+      background-color: red;
+      border-radius: 10px;
+      justify-content: center;
+      color: white;
+      align-items: center;
+      display: flex;
+      height: 40px;
+      width: 40px;
+      text-decoration: none;
+
+    }
+    .footer-icon:hover{
+      color: white;
+      background-color: #aa0000;
+    }
+  
+    /*  */
+  /* MEDIUM SCREEN DEVICES */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
 }
