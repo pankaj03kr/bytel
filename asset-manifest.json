@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bytel/static/css/main.b7f4bbf1.css",
-    "main.js": "/bytel/static/js/main.bc369fc5.js",
+    "main.js": "/bytel/static/js/main.75c089fd.js",
     "index.html": "/bytel/index.html",
     "main.b7f4bbf1.css.map": "/bytel/static/css/main.b7f4bbf1.css.map",
-    "main.bc369fc5.js.map": "/bytel/static/js/main.bc369fc5.js.map"
+    "main.75c089fd.js.map": "/bytel/static/js/main.75c089fd.js.map"
   },
   "entrypoints": [
     "static/css/main.b7f4bbf1.css",
-    "static/js/main.bc369fc5.js"
+    "static/js/main.75c089fd.js"
   ]
 }
